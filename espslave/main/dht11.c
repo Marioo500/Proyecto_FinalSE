@@ -49,12 +49,12 @@ static int _checkResponse() {
 }
 
 static struct dht11_reading _timeoutError() {
-    struct dht11_reading timeoutError = {DHT11_TIMEOUT_ERROR, -1, -1};
+    struct dht11_reading timeoutError = {DHT11_TIMEOUT_ERROR, 0, 0};
     return timeoutError;
 }
 
 static struct dht11_reading _crcError() {
-    struct dht11_reading crcError = {DHT11_CRC_ERROR, -1, -1};
+    struct dht11_reading crcError = {DHT11_CRC_ERROR, 0, 0};
     return crcError;
 }
 

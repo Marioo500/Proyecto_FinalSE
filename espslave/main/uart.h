@@ -25,7 +25,7 @@ char uartGetchar(uart_port_t uart_num);
 void uartGets(uart_port_t uart_num, char *str);
 void uartPuts(uart_port_t uart_num, char *str);
 void uartPutchar(uart_port_t uart_num, char c);
-
+uint16_t myAtoi(char *str);
 
 
 

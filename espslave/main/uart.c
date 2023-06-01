@@ -98,3 +98,15 @@ void uartPutchar(uart_port_t uart_num, char c)
 {
     uart_write_bytes(uart_num, &c, sizeof(c));
 }
+
+uint16_t myAtoi(char *str) // TERMINADA
+{
+    uint16_t number = 0;
+    uint16_t i = 0;
+    while(str[i] >= '0' && str[i] <= '9')
+    {
+        number = number * 10 + str[i] - '0';
+        i++;
+    }
+    return number;
+}
